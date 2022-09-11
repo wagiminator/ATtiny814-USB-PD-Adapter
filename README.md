@@ -1,7 +1,7 @@
 # USB PD Adapter based on ATtiny814 or compatible
 The USB PD Adapter is a USB Power Delivery trigger and monitoring board, with which you can use almost any USB Type-C PD power supply to power your projects with different selectable voltages and high currents. Important values such as voltage, current, power and energy are displayed on the OLED. The USB PD Adapter is based on the cheap and easy-to-use CH224K multi fast charging protocol power receiving chip, the INA219 voltage and current sensor IC, and an ATtiny204, 214, 404, 414, 804, 814, 1604 or 1614 microcontroller.
 
-- Design Files (EasyEDA): 
+- Design Files (EasyEDA): https://oshwlab.com/wagiminator/attiny814-usb-pd-adapter
 
 ![pic1.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_pic1.jpg)
 
