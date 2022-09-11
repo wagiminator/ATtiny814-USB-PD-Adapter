@@ -54,13 +54,13 @@ The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 
   - **Chip:**           choose the chip you have installed
   - **Clock:**          1 MHz internal
   - Leave the rest at the default settings.
-- Connect your programmer to your PC and to the UPDI header on the board.
+- Connect your [programmer](https://github.com/wagiminator/AVR-Programmer) to your PC and to the UPDI header on the board. Make sure the programmer works with 3.3V.
 - Go to **Tools -> Programmer** and select your UPDI programmer.
 - Go to **Tools -> Burn Bootloader** to burn the fuses.
 - Open the sketch and click **Upload**.
 
 ## If using the makefile (Linux/Mac)
-- Connect your [programmer](https://github.com/wagiminator/AVR-Programmer) (jtag2updi or SerialUPDI) to your PC and to the UPDI header on the board.
+- Connect your [programmer](https://github.com/wagiminator/AVR-Programmer) to your PC and to the UPDI header on the board. Make sure the programmer works with 3.3V.
 - Download [AVR 8-bit Toolchain](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) and extract the sub-folders (avr, bin, include, ...) to /software/tools/avr-gcc. To do this, you have to register for free with Microchip on the download site.
 - Open a terminal.
 - Navigate to the folder with the makefile and the sketch.
