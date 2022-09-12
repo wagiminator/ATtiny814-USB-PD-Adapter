@@ -1,4 +1,4 @@
-# USB PD Adapter based on ATtiny814 or compatible
+# USB PD Adapter
 The USB PD Adapter is a USB Power Delivery trigger and monitoring board, with which you can use almost any USB Type-C PD power supply to power your projects with different selectable voltages and high currents. Important values such as voltage, current, power and energy are displayed on the OLED. The USB PD Adapter is based on the cheap and easy-to-use CH224K multi fast charging protocol power receiving chip, the INA219 voltage and current sensor IC, and an ATtiny204, 214, 404, 414, 804, 814, 1604 or 1614 microcontroller.
 
 - Design Files (EasyEDA): https://oshwlab.com/wagiminator/attiny814-usb-pd-adapter
@@ -39,7 +39,7 @@ The CH224K's PG pin is open-drain, pulling the input to ground when the requeste
 The INA219 is a current shunt and power monitor with an I²C-compatible interface. The device monitors both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. The selected shunt resistance of 10mΩ enables both a very small influence on the circuit and a measurement with a resolution of 1mA. For an accurate measurement, a shunt resistor with a low tolerance (1% or better) should be selected. The INA219 is used here to measure the output voltage and output current. It communicates with the ATtiny via I²C.
 
 ## ATtiny Microcontroller
-The ATtiny microcontroller handles the user interface, the control of the CH224K and INA219, and the calculation and display of the measured values. The user interface utilizes two buttons and an [SSD1306 128x64 pixels OLED display](http://aliexpress.com/wholesale?SearchText=128+64+0.96+oled+new+4pin). In this application, the ATtiny runs at only 1MHz to keep power consumption low and thus avoid overheating of the 78L33 voltage regulator, especially at 20V output voltage.
+The ATtiny microcontroller handles the user interface, the control of the CH224K and INA219, and the calculation and display of the measured values. The user interface utilizes two buttons and an SSD1306 128x32 pixels OLED display. In this application, the ATtiny runs at only 1MHz to keep power consumption low and thus avoid overheating of the 78L33 voltage regulator, especially at 20V output voltage.
 
 The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 1604 or 1614. However, since the firmware in the current version already requires almost 2KB of SRAM (depending on the compiler settings), the use of an ATtiny202 or ATtiny212 is not recommended, since there are hardly any reserves left for future upgrades.
 
@@ -82,6 +82,7 @@ The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 
 5. [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 6. [CH224K USB PD Decoy](https://github.com/wagiminator/Power-Boards/tree/master/USB-PD_Decoy_CH224K)
 7. [TI Primer on USB PD](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
+8. [128x32 OLED on Aliexpress](http://aliexpress.com/wholesale?SearchText=128+32+0.91+oled)
 
 ![pic2.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_pic2.jpg)
 ![pic3.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_pic3.jpg)
