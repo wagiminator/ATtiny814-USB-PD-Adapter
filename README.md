@@ -41,7 +41,7 @@ The INA219 is a current shunt and power monitor with an I²C-compatible interfac
 ## ATtiny Microcontroller
 The ATtiny microcontroller handles the user interface, the control of the CH224K and INA219, and the calculation and display of the measured values. The user interface utilizes two buttons and an SSD1306 128x32 pixels OLED display. In this application, the ATtiny runs at only 1MHz to keep power consumption low and thus avoid overheating of the 78L33 voltage regulator, especially at 20V output voltage.
 
-The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 1604 or 1614. However, since the firmware in the current version already requires almost 2KB of SRAM (depending on the compiler settings), the use of an ATtiny202 or ATtiny212 is not recommended, since there are hardly any reserves left for future upgrades.
+The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 1604 or 1614. However, since the firmware in the current version already requires almost 2KB of flash (depending on the compiler settings), the use of an ATtiny202 or ATtiny212 is not recommended, since there are hardly any reserves left for future upgrades.
 
 ![hardware.png](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_hardware.png)
 
