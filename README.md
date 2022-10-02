@@ -81,8 +81,10 @@ The following microcontrollers can be used: ATtiny204, 214, 404, 414, 804, 814, 
 4. [ATtiny814 Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny417-814-816-817-DataSheet-DS40002288A.pdf)
 5. [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 6. [CH224K USB PD Decoy](https://github.com/wagiminator/Power-Boards/tree/master/USB-PD_Decoy_CH224K)
-7. [TI Primer on USB PD](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
-8. [128x32 OLED on Aliexpress](http://aliexpress.com/wholesale?SearchText=128+32+0.91+oled)
+7. [IP6520 USB PD Source](https://github.com/wagiminator/Power-Boards/tree/master/USB-PD_Source_IP6520)
+8. [ATtiny412 USB PD Inverter](https://github.com/wagiminator/ATtiny412-USB-PD-Inverter)
+9. [TI Primer on USB PD](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
+10. [128x32 OLED on Aliexpress](http://aliexpress.com/wholesale?SearchText=128+32+0.91+oled)
 
 ![pic2.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_pic2.jpg)
 ![pic3.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny814-USB-PD-Adapter/master/documentation/USB_PD_Adapter_pic3.jpg)
